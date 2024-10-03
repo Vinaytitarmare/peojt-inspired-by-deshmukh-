@@ -1,8 +1,4 @@
-<!-- <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
-</script> -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +15,7 @@
   
   <!-- Apply Poppins font in Tailwind -->
   <style>
-    body {    
+    body {
       font-family: 'Poppins', sans-serif;
     }
   </style>
@@ -35,32 +31,61 @@
 
     <!-- Email and Password Form -->
     <form action="#" method="POST">
+      
+      <div class="mb-4 flex justify-between">
+
+      <div class="mb-4 mr-3">
+        <label for="text" class="block text-gray-700">First Name</label>
+        <input type="text" id="email" name="email" placeholder="First Name " class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+      </div>
+      <div class="mb-4">
+        <label for="text" class="block text-gray-700">Last Name</label>
+        <input type="text" id="email" name="email" placeholder="Last Name" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+      </div>
+
+    </div>
+
+      <div class="mb-4">
+        <label for="text" class="block text-gray-700">Create Username</label>
+        <input type="text" id="email" name="email" placeholder="Username" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+      </div>
       <!-- Email -->
       <div class="mb-4">
         <label for="email" class="block text-gray-700">Email</label>
         <input type="email" id="email" name="email" placeholder="Enter Your Email" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
       </div>
 
-      <!-- Password -->
+      <!-- create Password -->
       <div class="mb-4 relative ">
-        <label for="password" class="block text-gray-700">Password</label>
-        <input type="password" id="password" name="password" placeholder="Enter Your Password" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <label for="password" class="block text-gray-700">Create Password</label>
+        <input type="password" id="password" name="password" placeholder="Create Password" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
 		<span class="absolute right-3 top-8	 cursor-pointer " id="password-toggle">
 			<i  class="fas fa-eye opacity-50  " id="password-eye"></i>
 		  </span>
       </div>
+      <!-- confirm password -->
+      <!-- <div class="mb-4 relative ">
+        <label for="password" class="block text-gray-700">Confirm Password</label>
+        <input type="password" id="password" name="password" placeholder="Confirm Password" class="w-full p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+		<span class="absolute right-3 top-8	 cursor-pointer " id="password-toggle">
+			<i  class="fas fa-eye opacity-50  " id="password-eye"></i>
+		  </span>
+      </div> -->
+ <!-- Terms & Conditions -->
+ <div class="flex items-start mb-5">
+  <div class="flex items-center h-5">
+    <input id="terms" name="terms" type="checkbox"   required class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"/></div>
+  <div class="ml-2 text-sm"><label for="terms" class="font-medium text-gray-700">I agree to the <a href="#" class="text-indigo-600 hover:text-indigo-500">Terms & Conditions</a> and <a href="#" class="text-indigo-600 hover:text-indigo-500">Privacy Policy</a></label>
+  </div>
+</div>
+     
 
-      <!-- Forgot Password -->
-      <div class="flex justify-between items-center mb-4 ">
-        <a href="#" class="text-sm text-gray-600 hover:text-blue-500">Forgot Password?</a>
-      </div>
-
-      <!-- Sign In Button -->
-      <button type="submit" class="w-full bg-[#49b6c5] text-white p-2 rounded-lg hover:bg-[#3aa7b2]">LOG IN</button>
+      <!-- Register Button -->
+      <button type="submit" class="w-full bg-[#49b6c5] text-white p-2 rounded-lg hover:bg-[#3aa7b2]">Register</button>
     </form>
 
     <!-- Sign Up Link -->
-    <p class="text-center text-gray-600 mt-4">Don't have an account? <a href="signup" class="text-blue-500 hover:underline">Sign Up</a></p>
+    <p class="text-center text-gray-600 mt-4">Already have an account? <a href="login" class="text-blue-500 hover:underline">Log In</a></p>
 
     <!-- OR Sign In With -->
     <div class="flex items-center justify-between mt-6">
