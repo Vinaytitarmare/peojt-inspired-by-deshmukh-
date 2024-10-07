@@ -1,9 +1,4 @@
-<!-- <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
-</script> -->
-<!-- main page -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,18 +22,17 @@
 </head>
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
  
-  <!-- Container -->
+  <!-- Container -->a
   <div class="min-w-96 max-w-102 bg-[#fffefe] h-auto px-auto rounded-lg p-8 md:w-102 text-sm">
     <!-- Logo -->
     <div class="flex justify-center mb-2">
       <img src="/icon/About.png" alt="Gradsy Logo" class="h-16">
     </div>
 
-<a href="home"><button class="bg-gray-200">(only for running)click me to navigate to home page for now</button></a>
-<a href="land_page"><button class="bg-gray-200">(only for running)click me to navigate to landing page for now</button></a>
+<a href="website_start/land_page"><button class="bg-gray-200">(only for running)click me to navigate to webstart</button></a>
+<a href="web_app/alumni"><button class="bg-gray-200">(only for running)click me to navigate to webapp</button></a>
     <!-- Sign Up Link -->
-    <p class="text-center text-gray-600 mt-4">Already have an account? <a href="signup" class="text-blue-500 hover:underline">Sign Up</a></p>
-
+   
 
 </body>
 </html>
