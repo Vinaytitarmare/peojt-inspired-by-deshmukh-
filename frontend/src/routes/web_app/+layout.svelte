@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- <script>import Navbar from '/Navbar.svelte'</script> -->
 <div class="app">
 	<!-- <Navbar /> -->
@@ -137,6 +138,124 @@
 
 
 	<main class="bg-[#d9d9d9] min-h-screen">
+
+
+<div class="app">
+	<!-- navbar//header -->
+	<div class="fixed top-0 left-0  h-screen  bg-[#24292f] text-[#49b6c5] transition-width duration-300 ease-in-out w-60 " id="sidebar">
+       
+        <div class="flex items-center p-3  w-40">
+            <div class="flex items-center p-3  ">
+                <button id="btn">   <div class=""><i class="fa-solid fa-bars text-6 text-[#49b6c5]   hover:text-[#3093a0] hover:bg-white p-3 rounded-full "></i></div> </button>
+                
+                <div class=" w-28  overflow-hidden ml-9 rounded-md  "><img id="logo_img" src="\icon\About.png" alt="Logo"></div>
+            </div>
+            </div>
+            <div> 
+      
+        <div class="options">
+            <ul class="mx-4">
+                <li>
+                   <div class="flex items-center w-full py-5 px-4 rounded-md hover:bg-white  hover:text-[#3093a0]">
+                    <a href="home" >
+                        <i class="fas fa-home mr-3"></i>
+                        <span class="ml-3 itemm ">Home</span>
+                    </a>
+                    <span class="tooltip absolute left-full top-1/2 transform -translate-y-1/2 bg-gray-900  text-blue-500 py-1 px-2 rounded-md opacity-0 transition duration-300 ease-in-out">Home</span>
+               
+                   </div> </li>
+                   <li>
+                    <div class="flex items-center w-full py-5 px-4 rounded-md hover:bg-white  hover:text-[#3093a0]">       <a href="alumni" >
+                       <i class="far fa-folder mr-3"></i>
+                       <span class="ml-3 itemm">Alumni </span>
+                   </a>
+                   <span class="tooltip absolute left-full top-1/2 transform -translate-y-1/2 bg-gray-900 text-white py-1 px-2 rounded-md opacity-0 transition duration-300 ease-in-out">Alumni Directory</span>
+            </div>   </li>
+                <li>
+                   <div class="flex items-center w-full py-5 px-4 rounded-md hover:bg-white  hover:text-[#3093a0]"> <a href="explore" >
+                    <i class="fas fa-plus p-[2px] mr-3"></i>
+                    <span class="ml-3 itemm">Explore</span>
+                </a>
+                <span class="tooltip absolute left-full top-1/2 transform -translate-y-1/2 bg-gray-900 text-white py-1 px-2 rounded-md opacity-0 transition duration-300 ease-in-out">Add Post</span>
+           </div> </li>
+                <li>
+                  <div class="flex items-center w-full py-5 px-4 rounded-md hover:bg-white hover:text-[#3093a0] ">  <a href="compaign" >
+                    <i class="far fa-message mr-3"></i>
+                    <span class="ml-3 itemm">Campaigns</span>
+                </a>
+                <span class="tooltip absolute left-full top-1/2 transform -translate-y-1/2 bg-gray-900 text-white py-1 px-2 rounded-md opacity-0 transition duration-300 ease-in-out">Message</span>
+          </div>  </li>
+                <!-- <li>
+                  <div class="flex items-center w-full py-5 px-4 rounded-md hover:bg-white hover:text-gray-900">  <a href="home" >
+                    <i class="fas fa-video mr-3"></i>
+                    <span class="ml-3 itemm">Job</span>
+                </a>
+                <span class="tooltip absolute left-full top-1/2 transform -translate-y-1/2 bg-gray-900 text-white py-1 px-2 rounded-md opacity-0 transition duration-300 ease-in-out">Quick Meet</span>
+         </div>   </li> -->
+                
+                <li>
+              <div class="flex items-center w-full py-5 px-4 rounded-md hover:bg-white ">
+                <a href="job" >
+                    <i class="fas fa-user-doctor mr-3"></i>
+                    <span class="ml-3 itemm">Jobs</span>
+                </a>
+                <span class="tooltip absolute left-full top-1/2 transform -translate-y-1/2 bg-gray-900 text-white py-1 px-2 rounded-md opacity-0 transition duration-300 ease-in-out">Job Portal</span>
+           
+              </div> </li>
+                <li>
+                  <div class="flex items-center w-full py-5 px-3 rounded-md hover:bg-white hover:text-[#3093a0]">
+                    <a href="notification" >
+                        <i class="fas fa-trophy pl-[3px] mr-2"></i>
+                        <span class="ml-3 itemm ">Notification</span>
+                    </a>
+                    <span class="tooltip absolute left-full top-1/2 transform -translate-y-1/2 bg-gray-900 text-white py-1 px-2 rounded-md opacity-0 transition duration-300 ease-in-out">Achievement</span>
+               
+                  </div> </li>
+            </ul>
+        </div>
+    </div>
+	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+<script>
+    let button = document.querySelector('#btn');
+let sidebar = document.querySelector('#sidebar');
+let items = document.querySelectorAll('.itemm');
+let tooltip = document.querySelector('.tooltip');
+
+let isCollapsed = false;
+
+button.onclick = () => {
+  isCollapsed = !isCollapsed;
+
+  sidebar.classList.toggle('w-20');
+  tooltip.classList.toggle('opacity-1');
+ 
+
+  if(isCollapsed==false) {
+      setTimeout(() => {
+          items.forEach((item) => {
+      item.classList.toggle('hidden');
+  });
+      },200);
+  }
+  else{
+      items.forEach((item) => {
+      item.classList.toggle('hidden');
+  });
+  }
+}
+  </script>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body {
+          font-family: 'Poppins', sans-serif;
+        }
+      </style>  
+</div>
+
+
+
+	<main>
+>>>>>>> 2484271ee5d3770804523fdfbc447a0e25c613e7
 		<slot />
 	</main>
 
@@ -169,7 +288,22 @@
 		/* width: 100%; */
 		/* overflow:-moz-hidden-unscrollable; */
 
+		flex-direction: column;
+		min-height: 100vh;
 	}
 
+	main {
+		/* flex: 1;
+		
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+		width: 100%;
+		max-width: 64rem;
+		margin: 0 auto;
+		margin-top: 56px;
+		box-sizing: border-box; */
+		margin-top: 60px;
 
-</style>
+
+	}

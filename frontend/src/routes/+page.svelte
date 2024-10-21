@@ -30,7 +30,11 @@
     </div>
 
 <a href="website_start/land_page"><button class="bg-gray-200">(only for running)click me to navigate to webstart</button></a>
+
 <a href="web_app/home"><button class="bg-gray-200">(only for running)click me to navigate to webapp</button></a>
+=======
+<a href="web_app/alumni"><button class="bg-gray-200">(only for running)click me to navigate to webapp</button></a>
+
     <!-- Sign Up Link -->
    
 
