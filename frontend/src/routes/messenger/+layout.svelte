@@ -2,9 +2,9 @@
 <!-- <script>import Navbar from '/Navbar.svelte'</script> -->
 <div class="app">
 	<!-- <Navbar /> -->
-	<div class="fixed h-screen  bg-[#24292f] text-[#49b6c5] transition-width duration-300 ease-in-out w-64	 " id="sidebar">
+	<div class="fixed h-screen  bg-[#24292f] text-[#49b6c5] transition-width duration-300 ease-in-out w-20	 " id="sidebar">
        
-		<div class="flex items-center p-[6px] pl-3  w-40">
+		<div class="flex items-center p-[6px] pl-3  w-64 bg-[#24292f]">
 			<div class="flex items-center p-3  ">
 				<button id="btn">   <div class=""><i class="fa-solid fa-bars text-6 text-[#49b6c5]   hover:text-[#3093a0] hover:bg-white p-3 rounded-full "></i></div> </button>
 				
@@ -17,9 +17,9 @@
 		  <ul class="mx-4 my-1">
 			<li class="">
 			   <div class="flex items-center w-full py-5 px-4 rounded-md hover:bg-white  hover:text-[#3093a0] h-14">
-				<a href="home" >
+				<a href="web_app/home" >
 					<i class="fas fa-home mr-3"></i>
-					<span class="ml-3 itemm ">Home</span>
+					<span class="ml-3 itemm  hidden">Home</span>
 				</a>
 				<span class="tooltip absolute left-full top-1/2 transform -translate-y-1/2 bg-gray-900  text-blue-500 py-1 px-2 rounded-md opacity-0 transition duration-300 ease-in-out">Home</span>
 		   
@@ -27,9 +27,9 @@
 
 			   <li class="">
 				<div class="flex items-center w-full py-5 px-4 rounded-md hover:bg-white  hover:text-[#3093a0] h-14">
-				 <a href="donate" >
+				 <a href="web_app/donate" >
 					<i class="fa-solid fa-hand-holding-dollar"></i>
-					 <span class="ml-6 itemm ">Donate</span>
+					 <span class="ml-6 itemm  hidden">Donate</span>
 				 </a>
 				 <span class="tooltip absolute left-full top-1/2 transform -translate-y-1/2 bg-gray-900  text-blue-500 py-1 px-2 rounded-md opacity-0 transition duration-300 ease-in-out">Home</span>
 			
@@ -37,41 +37,41 @@
 
 				<li class="">
 					<div class="flex items-center w-full py-5 px-4 rounded-md hover:bg-white  hover:text-[#3093a0] h-14">
-					 <a href="project" >
+					 <a href="web_app/project" >
 						<i class="fa-solid fa-briefcase"></i>
-						 <span class="ml-6 itemm ">Project</span>
+						 <span class="ml-6 itemm  hidden">Project</span>
 					 </a>
 					 <span class="tooltip absolute left-full top-1/2 transform -translate-y-1/2 bg-gray-900  text-blue-500 py-1 px-2 rounded-md opacity-0 transition duration-300 ease-in-out">Home</span>
 				
 					</div> </li>
 	
-					<li> <a href="job" >
+					<li> <a href="web_app/job" >
 						<div class="flex items-center w-full py-5 px-4 rounded-md hover:bg-white  hover:text-[#3093a0] h-14">
 						 
 							  <i class="fas fa-user-doctor mr-3"></i>
-							  <span class="ml-5 itemm">Jobs</span>
+							  <span class="ml-5 itemm hidden">Jobs</span>
 						  
 						  <span class="tooltip absolute left-full top-1/2 transform -translate-y-1/2 bg-gray-900 text-white py-1 px-2 rounded-md opacity-0 transition duration-300 ease-in-out">Job Portal</span>
 					 
 						</div> </li>
 			   <li>
-				<a href="alumni" > <div class="flex items-center w-full py-5 px-4 rounded-md hover:bg-white  hover:text-[#3093a0] h-14">      
+				<a href="web_app/alumni" > <div class="flex items-center w-full py-5 px-4 rounded-md hover:bg-white  hover:text-[#3093a0] h-14">      
 					<i class="fa-solid fa-user-graduate"></i>
-				   <span class="ml-8 itemm">Alumni </span>
+				   <span class="ml-8 itemm hidden">Alumni </span>
 			  
 			   <span class="tooltip absolute left-full top-1/2 transform -translate-y-1/2 bg-gray-900 text-white py-1 px-2 rounded-md opacity-0 transition duration-300 ease-in-out">Alumni Directory</span>
 		</div>   </a> </li>
-			<li><a href="meet" >
+			<li><a href="web_app/meet" >
 			   <div class="flex items-center w-full py-5 px-4 rounded-md hover:bg-white  hover:text-[#3093a0] h-14"> 
 				<i class="fa-solid fa-video"></i>
-				<span class="ml-7 itemm">Scheduled Meets</span>
+				<span class="ml-7 itemm hidden">Scheduled Meets</span>
 		   
 			<span class="tooltip absolute left-full top-1/2 transform -translate-y-1/2 bg-gray-900 text-white py-1 px-2 rounded-md opacity-0 transition duration-300 ease-in-out">Add Post</span>
 	   </div>  </a></li>
 			<li>
-			  <a href="event" > <div class="flex items-center w-full py-5 pl-4 rounded-md hover:bg-white hover:text-[#3093a0] h-14">  
+			  <a href="web_app/event" > <div class="flex items-center w-full py-5 pl-4 rounded-md hover:bg-white hover:text-[#3093a0] h-14">  
 				<i class="fa-solid fa-calendar-days"></i>
-				<span class="ml-7 itemm">Events and Reunions</span>
+				<span class="ml-7 itemm hidden">Events and Reunions</span>
 		  
 			<span class="tooltip absolute left-full top-1/2 transform -translate-y-1/2 bg-gray-900 text-white py-1 px-2 rounded-md opacity-0 transition duration-300 ease-in-out">Message</span>
 	  </div>   </a> </li>
@@ -80,6 +80,7 @@
 		</ul>
 		</div>
 	</div>
+    <!-- <div class="fixed bg-[#24292f] top-0 w-60 h-20">a</div> -->
 	<script>
 	  
 	
@@ -101,7 +102,7 @@
 		button.onclick = () => {
 		  isCollapsed = !isCollapsed;
 	
-		  sidebar.classList.toggle('w-20');
+		  sidebar.classList.toggle('w-64');
 		  tooltip.classList.toggle('opacity-1');
 		  
 	
@@ -113,14 +114,16 @@
 
 				// search_logo_space.classList.toggle('ml-36');
 			  });
-			}, 200);
+			}, 00);
 		  } else {
-			items.forEach((item) => {
-			  item.classList.toggle('hidden');
-			//   main_part.classList.toggle('ml-20');
+			setTimeout(() => {
+			  items.forEach((item) => {
+				item.classList.toggle('hidden');
+				// main_part.classList.toggle('ml-20');
 
-			 
-			});
+				// search_logo_space.classList.toggle('ml-36');
+			  });
+			}, 200);
 		  }
 		};
 	  

@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 <style>
@@ -38,8 +37,3 @@
  fdrdry
 </div>
 
-=======
-<div>
-    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-</div>
->>>>>>> 2484271ee5d3770804523fdfbc447a0e25c613e7
