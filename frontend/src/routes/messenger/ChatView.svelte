@@ -50,7 +50,7 @@
         { from: user, text: 'dance?' },
         { from: 'You', text:"no, i can't" },
         { from: user, text: 'shayarii for ur seniorr??' },
-        { from: 'You', text:'Jan ke bhi anjaan bante ho kyu tum, Ek bar nhi do bar dekhke bhi nazarandaazz krti ho kyu tum' },
+        { from: 'You', text:'Jan ke bhi anjaan bante ho kyu tum, Ek bar nhi bar bar dekhke bhi nazarandaazz krti ho kyu tum' },
     ];
 
     let newMessage = '';
